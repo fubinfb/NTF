@@ -14,6 +14,7 @@ Few-shot font generation (FFG), aiming at generating font images with a few samp
 
 ## Prerequisites
 
+Since our codes is based on [FFG-benchmarks](https://github.com/clovaai/fewshot-font-generation), installing this benchmark and then putting our code into the corresponding positions is the fastest way to implement our model. 
 The code is tested on `Python >= 3.6` (we recommend [conda](https://docs.anaconda.com/anaconda/install/linux/)) with the following libraries
 
 ```
