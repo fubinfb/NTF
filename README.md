@@ -97,5 +97,12 @@ This project is based on [FFG-benchmarks](https://github.com/clovaai/fewshot-fon
 ## How to cite
 
 ```
-
+@InProceedings{Fu_2023_CVPR,
+    author    = {Fu, Bin and He, Junjun and Wang, Jianjun and Qiao, Yu},
+    title     = {Neural Transformation Fields for Arbitrary-Styled Font Generation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {22438-22447}
+}
 ```
