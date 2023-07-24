@@ -1,5 +1,5 @@
 # [CVPR2023] Neural Transformation Fields for Arbitrary-Styled Font Generation
-This is the official Pytorch implementation of ***Neural Transformation Fields for Arbitrary-Styled Font Generation***. We have uploaded the model of our method. Other source codes (include the training stage and inference stage) will become available recently. 
+This is the official Pytorch implementation of ***Neural Transformation Fields for Arbitrary-Styled Font Generation***. 
 
 ## <center> Neural Transformation Fields for Arbitrary-Styled Font Generation </center>
 
