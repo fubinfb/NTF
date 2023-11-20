@@ -96,8 +96,8 @@ def build_trainer(args, cfg, gpu=0):
 
     logger.info(f"[{gpu}] Build model ...")
 
-    g_kwargs = cfg.get("gen", {})
-    gen = NTFGenerator(**g_kwargs) # cvpr2023 model: NTF-Loc
+    # g_kwargs = cfg.get("gen", {})
+    gen = NTFGenerator() # cvpr2023 model: NTF-Loc
     gen.cuda()
     gen.apply(weights_init("kaiming"))
 
