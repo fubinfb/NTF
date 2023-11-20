@@ -195,9 +195,8 @@ class SingleExpert(nn.Module):
         return self.feat_shape
 
 class Experts_Single(nn.Module):
-    def __init__(self, n_experts):
+    def __init__(self):
         super(Experts_Single, self).__init__()
-        self.n_experts = n_experts
         self.experts1 = SingleExpert()
 
     def forward(self, x):
@@ -208,12 +207,12 @@ class Experts_Single(nn.Module):
         return self.experts[0].get_feat_shape()
 
 class NTFGenerator(nn.Module):
-    def __init__(self, n_experts, n_emb):
+    def __init__(self):
         super().__init__()
         self.style_enc = StyleEncoder()
 
         self.n_experts = n_experts
-        self.experts = Experts_Single(self.n_experts)
+        self.experts = Experts_Single()
 
         self.fact_blocks = {}
         self.recon_blocks = {}
