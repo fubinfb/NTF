@@ -24,7 +24,7 @@ from torchvision import transforms
 from base.utils import Logger, TBDiskWriter, setup_train_config
 from base.modules import weights_init
 
-from NTFmodel.dataset_NeRFMS import NTFTrainDataset
+from NTFmodel.dataset_NeRFMS import NeRFTrainDataset
 from NTFmodel.models import Discriminator, AuxClassifier
 from NTFmodel.models import NTFGenerator
 
@@ -64,7 +64,8 @@ def build_trainer(args, cfg, gpu=0):
 
     logger.info(f"[{gpu}] Get dataset ...")
 
-    trn_dset = NTFTrainDataset(
+    # print(cfg.dset.train)
+    trn_dset = NeRFTrainDataset(
         transform=TRANSFORM,
         **cfg.dset.train
     )
