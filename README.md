@@ -18,14 +18,20 @@ Since our codes is based on [FFG-benchmarks](https://github.com/clovaai/fewshot-
 The code is tested on `Python >= 3.6` (we recommend [conda](https://docs.anaconda.com/anaconda/install/linux/)) with the following libraries
 
 ```
-torch >= 1.5
-sconf
-numpy
-scipy
-scikit-image
-tqdm
-jsonlib-python3
-fonttools
+conda create -n NTF python=3.8.5
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install sconf
+pip install scipy
+pip install scikit-image
+pip install tqdm
+pip install jsonlib-python3
+pip install fonttools
+pip install tensorboard
+pip install click
+pip install Pillow==9.5.0
+git clone https://github.com/clovaai/fewshot-font-generation.git
+git clone https://github.com/fubinfb/NTF.git
+# merge the files in fewshot-font-generation and NTF
 ```
 
 ## Datasets
