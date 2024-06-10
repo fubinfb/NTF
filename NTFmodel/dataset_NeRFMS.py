@@ -13,7 +13,7 @@ import torch
 from base.dataset import BaseTrainDataset, BaseDataset, sample, render, read_font
 
 class NeRFTrainDataset(BaseTrainDataset):
-    def __init__(self, data_dir, chars, transform=None,
+    def __init__(self, data_dir, chars, source_path, transform=None,
                  n_in_s=3, n_in_c=3, extension="png"):
         super().__init__(data_dir, chars, transform, extension)
 
@@ -24,10 +24,10 @@ class NeRFTrainDataset(BaseTrainDataset):
         self.data_list = [(_key, _char) for _key, _chars in self.key_char_dict.items() for _char in _chars]
         self.n_in_s = n_in_s
         self.n_in_c = n_in_c
-        self.n_chars = len(self.chars)  ¬¦
+        self.n_chars = len(self.chars) 
         self.n_fonts = len(self.keys)   
 
-        source_path = " "
+        # source_path = " "
         self.source = read_font(source_path)
         self.transform = transform
 

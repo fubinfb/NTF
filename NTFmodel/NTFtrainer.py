@@ -12,17 +12,11 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from base.trainer import cyclize, binarize_labels, expert_assign
-from NTFbase_trainer import BaseTrainer
+from .NTFbase_trainer import BaseTrainer
 import base.utils as utils
-from base.utils.visualize import save_tensor_as_mat
 import os
 from PIL import Image
 import scipy.io as io
-import matplotlib as mpl
-mpl.use('Agg')
-import matplotlib.pyplot as plt
-
-
 
 def to_batch(batch):
     in_batch = {

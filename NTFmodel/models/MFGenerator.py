@@ -211,7 +211,7 @@ class NTFGenerator(nn.Module):
         super().__init__()
         self.style_enc = StyleEncoder()
 
-        self.n_experts = n_experts
+        # self.n_experts = n_experts
         self.experts = Experts_Single()
 
         self.fact_blocks = {}
