@@ -1,0 +1,4 @@
+trainer:
+  resume:
+  work_dir: ./result/NTF   # the directory to save checkpoints, validation images, and the log.
+
